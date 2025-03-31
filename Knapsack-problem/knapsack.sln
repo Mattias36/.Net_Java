@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "knapsack", "knapsack\knapsack.csproj", "{45ACF473-87BA-494A-817D-52202900F433}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unit_tests", "Unittests\Unit_tests.csproj", "{D0D9CE06-C86C-4CB8-B2AE-24B9F020449A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnapsackGUI", "KnapsackGUI\KnapsackGUI.csproj", "{2255EA8E-AB8F-4473-B09F-AF8E2A10B08C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45ACF473-87BA-494A-817D-52202900F433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45ACF473-87BA-494A-817D-52202900F433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45ACF473-87BA-494A-817D-52202900F433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45ACF473-87BA-494A-817D-52202900F433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D9CE06-C86C-4CB8-B2AE-24B9F020449A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D9CE06-C86C-4CB8-B2AE-24B9F020449A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D9CE06-C86C-4CB8-B2AE-24B9F020449A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D9CE06-C86C-4CB8-B2AE-24B9F020449A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2255EA8E-AB8F-4473-B09F-AF8E2A10B08C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2255EA8E-AB8F-4473-B09F-AF8E2A10B08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2255EA8E-AB8F-4473-B09F-AF8E2A10B08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2255EA8E-AB8F-4473-B09F-AF8E2A10B08C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1479F2E3-894C-40A7-97A1-10BA3BBFFB51}
+	EndGlobalSection
+EndGlobal
