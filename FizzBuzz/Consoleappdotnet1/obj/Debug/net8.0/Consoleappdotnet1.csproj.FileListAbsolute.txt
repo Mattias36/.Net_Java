@@ -1,0 +1,14 @@
+C:\Users\mateu\source\repos\Consoleappdotnet1\Consoleappdotnet1\bin\Debug\net8.0\Consoleappdotnet1.exe
+C:\Users\mateu\source\repos\Consoleappdotnet1\Consoleappdotnet1\bin\Debug\net8.0\Consoleappdotnet1.deps.json
+C:\Users\mateu\source\repos\Consoleappdotnet1\Consoleappdotnet1\bin\Debug\net8.0\Consoleappdotnet1.runtimeconfig.json
+C:\Users\mateu\source\repos\Consoleappdotnet1\Consoleappdotnet1\bin\Debug\net8.0\Consoleappdotnet1.dll
+C:\Users\mateu\source\repos\Consoleappdotnet1\Consoleappdotnet1\bin\Debug\net8.0\Consoleappdotnet1.pdb
+C:\Users\mateu\source\repos\Consoleappdotnet1\Consoleappdotnet1\obj\Debug\net8.0\Consoleappdotnet1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mateu\source\repos\Consoleappdotnet1\Consoleappdotnet1\obj\Debug\net8.0\Consoleappdotnet1.AssemblyInfoInputs.cache
+C:\Users\mateu\source\repos\Consoleappdotnet1\Consoleappdotnet1\obj\Debug\net8.0\Consoleappdotnet1.AssemblyInfo.cs
+C:\Users\mateu\source\repos\Consoleappdotnet1\Consoleappdotnet1\obj\Debug\net8.0\Consoleappdotnet1.csproj.CoreCompileInputs.cache
+C:\Users\mateu\source\repos\Consoleappdotnet1\Consoleappdotnet1\obj\Debug\net8.0\Consoleappdotnet1.dll
+C:\Users\mateu\source\repos\Consoleappdotnet1\Consoleappdotnet1\obj\Debug\net8.0\refint\Consoleappdotnet1.dll
+C:\Users\mateu\source\repos\Consoleappdotnet1\Consoleappdotnet1\obj\Debug\net8.0\Consoleappdotnet1.pdb
+C:\Users\mateu\source\repos\Consoleappdotnet1\Consoleappdotnet1\obj\Debug\net8.0\Consoleappdotnet1.genruntimeconfig.cache
+C:\Users\mateu\source\repos\Consoleappdotnet1\Consoleappdotnet1\obj\Debug\net8.0\ref\Consoleappdotnet1.dll
