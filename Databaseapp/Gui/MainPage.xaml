@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gui.MainPage">
+
+    <StackLayout Padding="10" Spacing="10">
+        <!-- Lista pytań -->
+        <ListView x:Name="QuestionsListView"
+                  ItemSelected="OnQuestionSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="5">
+                            <Label Text="{Binding Question}" 
+                                   VerticalOptions="CenterAndExpand"
+                                   FontSize="16"
+                                   HorizontalOptions="StartAndExpand"/>
+                            <Label Text=">" 
+                                   FontSize="16" 
+                                   VerticalOptions="Center"
+                                   TextColor="Gray"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Label x:Name="StatusLabel" Text="Kliknij aby pobrać pytania" />
+        <!-- Przyciski -->
+        <Button Text="Pobierz pytania z API"
+      
+                Clicked="FetchQuestionsFromApi"/>
+
+        <Button Text="Wyczyść bazę"
+                Clicked="ClearDatabase"
+                BackgroundColor="Red"
+                TextColor="White"/>
+    </StackLayout>
+
+</ContentPage>

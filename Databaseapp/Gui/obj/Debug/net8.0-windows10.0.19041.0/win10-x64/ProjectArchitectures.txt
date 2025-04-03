@@ -1,0 +1,1 @@
+C:\Users\mateu\source\repos\Databaseapp\Gui\Gui.csproj;x64
