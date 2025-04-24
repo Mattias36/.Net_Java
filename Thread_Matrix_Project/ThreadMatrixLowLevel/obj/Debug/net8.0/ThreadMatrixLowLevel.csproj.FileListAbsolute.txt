@@ -1,0 +1,14 @@
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ThreadMatrixLowLevel\bin\Debug\net8.0\ThreadMatrixLowLevel.exe
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ThreadMatrixLowLevel\bin\Debug\net8.0\ThreadMatrixLowLevel.deps.json
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ThreadMatrixLowLevel\bin\Debug\net8.0\ThreadMatrixLowLevel.runtimeconfig.json
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ThreadMatrixLowLevel\bin\Debug\net8.0\ThreadMatrixLowLevel.dll
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ThreadMatrixLowLevel\bin\Debug\net8.0\ThreadMatrixLowLevel.pdb
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ThreadMatrixLowLevel\obj\Debug\net8.0\ThreadMatrixLowLevel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ThreadMatrixLowLevel\obj\Debug\net8.0\ThreadMatrixLowLevel.AssemblyInfoInputs.cache
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ThreadMatrixLowLevel\obj\Debug\net8.0\ThreadMatrixLowLevel.AssemblyInfo.cs
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ThreadMatrixLowLevel\obj\Debug\net8.0\ThreadMatrixLowLevel.csproj.CoreCompileInputs.cache
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ThreadMatrixLowLevel\obj\Debug\net8.0\ThreadMatrixLowLevel.dll
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ThreadMatrixLowLevel\obj\Debug\net8.0\refint\ThreadMatrixLowLevel.dll
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ThreadMatrixLowLevel\obj\Debug\net8.0\ThreadMatrixLowLevel.pdb
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ThreadMatrixLowLevel\obj\Debug\net8.0\ThreadMatrixLowLevel.genruntimeconfig.cache
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ThreadMatrixLowLevel\obj\Debug\net8.0\ref\ThreadMatrixLowLevel.dll

@@ -1,0 +1,14 @@
+C:\Users\mateu\source\repos\Thread_Matrix_Project\Thread_Matrix_Project\bin\Debug\net8.0\ThreadMatrixParallel.exe
+C:\Users\mateu\source\repos\Thread_Matrix_Project\Thread_Matrix_Project\bin\Debug\net8.0\ThreadMatrixParallel.deps.json
+C:\Users\mateu\source\repos\Thread_Matrix_Project\Thread_Matrix_Project\bin\Debug\net8.0\ThreadMatrixParallel.runtimeconfig.json
+C:\Users\mateu\source\repos\Thread_Matrix_Project\Thread_Matrix_Project\bin\Debug\net8.0\ThreadMatrixParallel.dll
+C:\Users\mateu\source\repos\Thread_Matrix_Project\Thread_Matrix_Project\bin\Debug\net8.0\ThreadMatrixParallel.pdb
+C:\Users\mateu\source\repos\Thread_Matrix_Project\Thread_Matrix_Project\obj\Debug\net8.0\ThreadMatrixParallel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mateu\source\repos\Thread_Matrix_Project\Thread_Matrix_Project\obj\Debug\net8.0\ThreadMatrixParallel.AssemblyInfoInputs.cache
+C:\Users\mateu\source\repos\Thread_Matrix_Project\Thread_Matrix_Project\obj\Debug\net8.0\ThreadMatrixParallel.AssemblyInfo.cs
+C:\Users\mateu\source\repos\Thread_Matrix_Project\Thread_Matrix_Project\obj\Debug\net8.0\ThreadMatrixParallel.csproj.CoreCompileInputs.cache
+C:\Users\mateu\source\repos\Thread_Matrix_Project\Thread_Matrix_Project\obj\Debug\net8.0\ThreadMatrixParallel.dll
+C:\Users\mateu\source\repos\Thread_Matrix_Project\Thread_Matrix_Project\obj\Debug\net8.0\refint\ThreadMatrixParallel.dll
+C:\Users\mateu\source\repos\Thread_Matrix_Project\Thread_Matrix_Project\obj\Debug\net8.0\ThreadMatrixParallel.pdb
+C:\Users\mateu\source\repos\Thread_Matrix_Project\Thread_Matrix_Project\obj\Debug\net8.0\ThreadMatrixParallel.genruntimeconfig.cache
+C:\Users\mateu\source\repos\Thread_Matrix_Project\Thread_Matrix_Project\obj\Debug\net8.0\ref\ThreadMatrixParallel.dll

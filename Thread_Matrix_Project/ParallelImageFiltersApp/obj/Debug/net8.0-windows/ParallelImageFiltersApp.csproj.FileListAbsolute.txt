@@ -1,0 +1,16 @@
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ParallelImageFiltersApp\bin\Debug\net8.0-windows\ParallelImageFiltersApp.exe
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ParallelImageFiltersApp\bin\Debug\net8.0-windows\ParallelImageFiltersApp.deps.json
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ParallelImageFiltersApp\bin\Debug\net8.0-windows\ParallelImageFiltersApp.runtimeconfig.json
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ParallelImageFiltersApp\bin\Debug\net8.0-windows\ParallelImageFiltersApp.dll
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ParallelImageFiltersApp\bin\Debug\net8.0-windows\ParallelImageFiltersApp.pdb
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ParallelImageFiltersApp\obj\Debug\net8.0-windows\ParallelImageFiltersApp.Form1.resources
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ParallelImageFiltersApp\obj\Debug\net8.0-windows\ParallelImageFiltersApp.csproj.GenerateResource.cache
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ParallelImageFiltersApp\obj\Debug\net8.0-windows\ParallelImageFiltersApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ParallelImageFiltersApp\obj\Debug\net8.0-windows\ParallelImageFiltersApp.AssemblyInfoInputs.cache
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ParallelImageFiltersApp\obj\Debug\net8.0-windows\ParallelImageFiltersApp.AssemblyInfo.cs
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ParallelImageFiltersApp\obj\Debug\net8.0-windows\ParallelImageFiltersApp.csproj.CoreCompileInputs.cache
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ParallelImageFiltersApp\obj\Debug\net8.0-windows\ParallelImageFiltersApp.dll
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ParallelImageFiltersApp\obj\Debug\net8.0-windows\refint\ParallelImageFiltersApp.dll
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ParallelImageFiltersApp\obj\Debug\net8.0-windows\ParallelImageFiltersApp.pdb
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ParallelImageFiltersApp\obj\Debug\net8.0-windows\ParallelImageFiltersApp.genruntimeconfig.cache
+C:\Users\mateu\source\repos\Thread_Matrix_Project\ParallelImageFiltersApp\obj\Debug\net8.0-windows\ref\ParallelImageFiltersApp.dll

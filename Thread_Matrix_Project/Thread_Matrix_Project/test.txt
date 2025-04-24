@@ -1,0 +1,30 @@
+﻿ static void Main(string[] args)
+    {
+        int size = 200;
+        int numThreads = 4; 
+
+        var matrixA = Matrix.GenerateRandom(size, size);
+        var matrixB = Matrix.GenerateRandom(size, size);
+
+        // Sekwencyjnie
+        var watchSeq = Stopwatch.StartNew();
+        var resultSeq = Matrix.Multiply(matrixA, matrixB, 1);
+        watchSeq.Stop();
+
+        // Równolegle
+        var watchPar = Stopwatch.StartNew();
+        var resultPar = Matrix.Multiply(matrixA, matrixB, numThreads);
+        watchPar.Stop();
+
+        bool isCorrect = Matrix.Compare(resultSeq, resultPar);
+        Console.WriteLine($"Poprawność: {(isCorrect ? "OK" : "BŁĄD")}");
+
+        Console.WriteLine($"Czas sekwencyjnie: {watchSeq.ElapsedMilliseconds} ms");
+        Console.WriteLine($"Czas równolegle ({numThreads} wątki): {watchPar.ElapsedMilliseconds} ms");
+
+        // Dla wyświetlania mniejszych macierzy
+        // Matrix.Print(matrixA, "A");
+        // Matrix.Print(matrixB, "B");
+        // Matrix.Print(resultSeq, "Wynik (sekwencyjnie)");
+        // Matrix.Print(resultPar, "Wynik (równolegle)");
+    }
