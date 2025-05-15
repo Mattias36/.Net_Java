@@ -2,3 +2,7 @@ Databaseapp/trivia.db
 Databaseapp/trivia.db-shm
 Databaseapp/trivia.db-wal
 Databaseapp/Migrations/
+# Pliki buildów i IDE
+.vs/
+bin/
+obj/

@@ -1,0 +1,109 @@
+﻿@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+@page "/movies/details"
+@rendermode InteractiveServer
+@using Microsoft.EntityFrameworkCore
+@using Web_database_app.Models
+@inject IDbContextFactory<Web_database_app.Data.ApplicationDbContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Details</PageTitle>
+
+<h1>Details</h1>
+
+<div>
+    <h2>Movie</h2>
+    <hr />
+    @if (movie is null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else {
+        <dl class="row">
+            <dt class="col-sm-2">Title</dt>
+            <dd class="col-sm-10">@movie.Title</dd>
+            <dt class="col-sm-2">Description</dt>
+            <dd class="col-sm-10">@movie.Description</dd>
+            <dt class="col-sm-2">RelaseDate</dt>
+            <dd class="col-sm-10">@movie.RelaseDate</dd>
+            <dt class="col-sm-2">Rate</dt>
+            <dd class="col-sm-10">@((movie.Rate.HasValue ? movie.Rate.Value.ToString("0.0") : "Not rated"))</dd>
+            <dt class="col-sm-2">Image</dt>
+            <dd class="col-sm-10">
+                @if (!string.IsNullOrEmpty(movie.ImageFileName))
+                {
+                    <img src="@($"/images/{movie.ImageFileName}")" alt="Movie image" style="max-width: 300px;" />
+                }
+                else
+                {
+                    <em>Image none</em>
+                }
+            </dd>
+
+
+        </dl>
+
+        <div>
+            <a href="@($"/movies/edit?id={movie.Id}")">Edit</a> |
+            <a href="@($"/movies")">Back to List</a>
+            @if (movie is not null)
+            {
+                <h4>Rate the movie</h4>
+                <InputNumber @bind-Value="userScore" class="form-control w-auto" Min="1" Max="10" />
+                <button class="btn btn-primary mt-2" @onclick="SubmitVote">Vote</button>
+                
+
+                @if (!string.IsNullOrEmpty(voteMessage))
+                {
+                    <p class="text-success mt-2">@voteMessage</p>
+                }
+            }
+
+        </div>
+    }
+</div>
+
+@code {
+    private Movie? movie;
+
+    [SupplyParameterFromQuery]
+    private int Id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+        movie = await context.Movie.FirstOrDefaultAsync(m => m.Id == Id);
+
+        if (movie is null)
+        {
+            NavigationManager.NavigateTo("notfound");
+        }
+    }
+    private int userScore = 5;
+    private string? voteMessage;
+
+    private async Task SubmitVote()
+    {
+
+        await using var context = await DbFactory.CreateDbContextAsync();
+        var votedMovie = await context.Movie.FindAsync(movie!.Id);
+
+        if (votedMovie is not null)
+        {
+
+            votedMovie.TotalScore += userScore;
+            votedMovie.VoteCount += 1;
+            await context.SaveChangesAsync();
+
+            movie = votedMovie;
+            voteMessage = "Movie has been rated!!";
+            StateHasChanged();
+        }
+        else
+        {
+            voteMessage = "Movie does not exist";
+        }
+    }
+
+
+}

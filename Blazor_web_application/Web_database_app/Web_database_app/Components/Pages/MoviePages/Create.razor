@@ -1,0 +1,86 @@
+﻿@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+@page "/movies/create"
+@rendermode InteractiveServer
+@using Microsoft.EntityFrameworkCore
+@using Web_database_app.Models
+@inject IDbContextFactory<Web_database_app.Data.ApplicationDbContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Create</PageTitle>
+
+<h1>Create</h1>
+
+<h2>Movie</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <EditForm method="post" Model="Movie" OnValidSubmit="AddMovie" FormName="create" Enhance>
+            <DataAnnotationsValidator />
+            <ValidationSummary class="text-danger" role="alert"/>
+            <div class="mb-3">
+                <label for="title" class="form-label">Title:</label> 
+                <InputText id="title" @bind-Value="Movie.Title" class="form-control" /> 
+                <ValidationMessage For="() => Movie.Title" class="text-danger" /> 
+            </div>        
+            <div class="mb-3">
+                <label for="description" class="form-label">Description:</label> 
+                <InputText id="description" @bind-Value="Movie.Description" class="form-control" /> 
+                <ValidationMessage For="() => Movie.Description" class="text-danger" /> 
+            </div>        
+            <div class="mb-3">
+                <label for="relasedate" class="form-label">RelaseDate:</label> 
+                <InputDate id="relasedate" @bind-Value="Movie.RelaseDate" class="form-control" /> 
+                <ValidationMessage For="() => Movie.RelaseDate" class="text-danger" /> 
+            </div>          
+
+            <div class="mb-3">
+                <label for="imageurl" class="form-label">ImageUrl:</label> 
+                <InputText id="imageurl" @bind-Value="Movie.ImageUrl" class="form-control" /> 
+                <ValidationMessage For="() => Movie.ImageUrl" class="text-danger" /> 
+            </div>
+            <div class="mb-3">
+                <label for="imagefile" class="form-label">Load Image:</label>
+                <InputFile OnChange="HandleFileSelected" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create</button>
+        </EditForm>
+    </div>
+</div>
+
+<div>
+    <a href="/movies">Back to List</a>
+</div>
+
+@code {
+    [SupplyParameterFromForm]
+    private Movie Movie { get; set; } = new();
+    private IBrowserFile? selectedFile;
+    // To protect from overposting attacks, see https://learn.microsoft.com/aspnet/core/blazor/forms/#mitigate-overposting-attacks.
+    private async Task AddMovie()
+    {
+        
+        if (selectedFile != null)
+        {
+            var fileName = Path.GetRandomFileName() + Path.GetExtension(selectedFile.Name);
+            var folderPath = Path.Combine("wwwroot", "images");
+            Directory.CreateDirectory(folderPath); // upewnij się, że folder istnieje
+            var filePath = Path.Combine(folderPath, fileName);
+
+            await using var stream = File.Create(filePath);
+            await selectedFile.OpenReadStream(maxAllowedSize: 5 * 1024 * 1024).CopyToAsync(stream);
+
+            Movie.ImageFileName = fileName;
+        }
+        using var context = DbFactory.CreateDbContext();
+        context.Movie.Add(Movie);
+        await context.SaveChangesAsync();
+        NavigationManager.NavigateTo("/movies");
+
+    }
+    private async Task HandleFileSelected(InputFileChangeEventArgs e)
+    {
+        selectedFile = e.File;
+    }
+}
