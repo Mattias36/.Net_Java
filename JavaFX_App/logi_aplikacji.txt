@@ -1,0 +1,12 @@
+[2025-06-05 17:25:43] [INFO] Uruchomiono aplikację
+[2025-06-05 17:27:08] [INFO] Wczytano obraz do aplikacji
+[2025-06-05 17:27:32] [INFO] Wykonywanie operacji: Negatyw
+[2025-06-05 17:27:34] [INFO] Negatyw został wygenerowany pomyślnie!
+[2025-06-05 17:27:43] [INFO] Zmieniono rozmiar na :400x400
+[2025-06-05 17:27:47] [INFO] Przywrócono oryginalne wymiary obrazu.
+[2025-06-05 17:27:50] [INFO] Użytkownik zresetował obraz do oryginału
+[2025-06-05 18:55:31] [INFO] Uruchomiono aplikację
+[2025-06-05 18:55:41] [INFO] Wczytano obraz do aplikacji
+[2025-06-05 18:55:46] [INFO] Wykonywanie operacji: Negatyw
+[2025-06-05 18:55:48] [INFO] Negatyw został wygenerowany pomyślnie!
+[2025-06-05 18:57:29] [INFO] Zamknięto aplikację
